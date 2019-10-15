@@ -1,0 +1,155 @@
+Lecture 1
+
+Python is an object-oriented language
+
+- Classes
+	A class is a type of object (R,Z,Q)
+- Object
+	An object is an instance of a class
+Ex.
+class = Z
+objects = 1,2,3
+
+class = dragon maids
+objects = Kana, Torhu
+
+Note: Class and objects = Category Theory
+
+Two types of classes in Python:
+- Mutatble classes:
+	- str class (string)[a string is a list of letter]
+	- list class
+	- dictionary class
+	- custom class [classes you make]
+- Immuttable classes: 
+	- none class (empty set)
+	- Boolean class (True/False)
+	- int class (integer)
+	- float class (float)[decimal numbers]
+	- tuple class (tuple)
+
+
+
+"if __name__ == '__main__':":
+	- splits into 2 pieces: module (below) and script (above)
+
+# for comments
+
+print( ):
+	- returns value of input
+
+type( ):
+	- returns class of input
+
+int( ):
+	- converts Boolean into integer
+
+bool( ):
+	- converts 0,1 into Boolean
+
+
+
+Logistic Operators
+
+"==":
+	- outputs a Boolean object
+	- LHS = RHS ---> true
+	- LHS =/= RHS ---> false
+
+"!=":
+	- not equal to
+
+"A or B":
+	- returns true if at least 1 is true
+
+"A and B":
+	- returns true is both are true
+
+
+"round( )":
+	- floor function
+
+
+
+Mutable Classes
+
+Note: varible names use only lower case, unless it is a single letter (ie. X, Y), and separate with _ (ex. is_kanna_loli). Python is case sensitive
+
+All mutable classes have methods
+
+Methods:
+	- a method is a special type of function
+	- a method works like object.f(arguments) --> changes object
+	- can also output a result
+	- arguements can be empty
+
+A function works like f(arguements) --> output
+
+
+Difference between Mutable and Immutable
+
+- Creating a value assigns a certain memory storage (an address)
+	- can check with "id( )"
+
+- changing a value of an immutable object will change the address
+- changing the value of a mutable object under the action of a method will not change the address
+
+
+---	---	---	---	---	---	---	---	---	---	---	---
+
+Lecture 2
+
+
+If statements
+
+Rules: 
+	1. Make sure that the values are in the same class (i.e. x == y, make sure x and y are the same class: Integer, Boolean, etc)
+	
+	2. Do no directly compare mutable classes, consider fucntion of mutable classes instead (except short strings i.e. x == 'Chris')
+
+
+IN Statement
+"x in L":
+	- checks if x is an element in L
+
+While loops
+
+always need a terminating statement to escape the loop
+
+
+---	---	---	---	---	---	---	---	---	---	---	---
+
+Lecture 3
+
+Functions
+	- get defined before name = main statement (in the module area)
+	- functions are a type of class (mutatable/immutatable doesn't matter)
+	- functions can be renamed for convenience
+	- ALWAYS comment functions (describe its action)
+
+Fucntion comments:
+	1. what are arugments and types?
+	2. what does function do?
+	3. what does function output?
+
+Function names:
+	- lowercase
+	- spaced by underscores (get_square)
+	- consistency in keywords and actions
+
+Mutable vs Immutable
+
+every python function takes a variable input and does a pass by value
+	- takes a functions value but not its name
+	- a function alone cannot change an immutable class
+	- need a line of code to assign a new value to the variable
+
+Functions can:
+	- change value of object
+	- return values by processing arguement values
+
+Changing value of an object:
+	- mutable: global value gets changed
+	- immutable: nothing happens to global variable's value
+
+

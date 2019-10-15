@@ -1,0 +1,31 @@
+Python is an object-oriented language
+
+- A class is a type of object
+- An object is an instance of a class
+
+There are two types of classes in Python:
+
+MUTABLE CLASSES
+ - string (str)
+ - list (list)
+ - dictionary (dict)
+ - custom classes*
+
+IMMUTABLE CLASSES
+ - None
+ - Boolean (bool)
+ - integer (int)
+ - float (float)
+ - tuple (tuple)
+
+DIFFERENCE BETWEEN MUTABLE AND IMMUTABLE
+
+MUTABLE CLASS
+ - Has methods.
+ - A variable's mutable value can be changed without changing its memory address.
+ - Treated as a global variable. If used as an argument in a function,  no local variable will be created.
+
+IMMUTABLE CLASS
+ - Does not have methods
+ - A variable's immutable value cannot be changed without changing its memory address.
+ - Treated as a 'local' variable. If used as an argument in a function, a local copy will be created.

@@ -1,0 +1,24 @@
+IF STATEMENTS
+
+- An 'if' statement provides a conditional execution of lines of code.
+- Every if condition uses a Boolean value.
+- Use elif for additional conditions. Python will go through the conditions from top to bottom until it finds the first True condition.  It will then ignore the rest of the conditional branches.
+- Use else as the 'otherwise' condition. This will execute given every other elif statements fail.
+
+- When making 'if' statements, there are some rules of thumb:
+ 1. Make sure you are operating on the same class objects! For example, if you write x == y, then make sure type(x) == type(y).
+ 2. Do not operate on mutable objects, with the exception of (short) strings.
+
+
+TRY STATEMENT
+- A 'try' statement is a special type of if statement that only executes given there is no error in the lines.
+- Use 'except' to execute a line given the try statement detects an error.
+- Use 'else' to execute a line given the try statement worked.
+- Useful for debugging.
+
+
+WHILE LOOP
+- A 'while' loop is a control flow statement that allows code to be executed repeatedly with a terminal condition.
+
+FOR LOOP
+- A special type of while loop, iterating over a list.

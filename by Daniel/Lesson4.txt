@@ -1,0 +1,33 @@
+Functions bucket list:
+
+- def f(x), arguments, print(x), return, location of function
+- Calling functions, renaming functions in script. Functions are objects
+- Comments on a function
+ - help, source assistant. Proper documentation is important!
+ - What should a comment include? Input types, action, output types
+- Naming functions
+ - Similar style as variables (all lower case, underscore allowed)
+ - Use consist keywords (e.g. get_, print_, write_, etc.)
+- The difference between mutable and immutable arguments
+ - Only the value of the object is passed in all cases (with memory address)
+ - The function creates a local variable copy of the argument with the same value and address.
+ - Changing the local variable's assigned value does nothing to the original global variable.
+ - However, changing the value itself has consequences:
+  - For immutable objects, nothing changes
+  - For mutable objects, its referenced value changes and therefore the global variable's value changes.
+  - The big question: DOES THE FUNCTION CHANGE THE VALUE OF THE ARGUMENT(S)?
+
+- Multivariable functions
+- Keyword arguments
+ - Default arguments
+
+- Stared arguments
+ - *args
+ - **kwargs
+ - Assigning defaults on **kwargs
+
+- Lambda functions
+
+- Calling functions
+ - Calling a function inside another a function
+ - Module does not follow the top to bottom rule. You can define functions in any order.
