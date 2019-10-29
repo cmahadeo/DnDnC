@@ -74,8 +74,15 @@ def dict_copy(d):
     Given d is any dictionary, returns a copy of d (with a different memory address).
     This is the same as d.copy()
     '''
+
+    d2 = {}
     
-    return None
+    for key in d.keys():
+        d2[key] = d[key]
+
+    
+    
+    return d2
 
 
 def count(L, x):
@@ -121,16 +128,46 @@ def make_range(*args):
     
     All additional arguments past the first 3 are ignored. This is similar to range(*args).
     '''
+    L = []
+    for a in args:          # create a list of inputs
+        L.append(a)
+    print(L)
+    l = len(L)              # determine number of inputs
+    print(l)
+    n = []                  # create an empty list
     
-    return None
+    if l == 1:              # for 1 entry
+        i = 0               # fixes starting point as 0
+        if i < L[0]:        # checks if i is less than first input
+            n.append(i)     # add integer value to the list
+            i += 1          # moves up to next integer
+        return n
+    
+    if l == 2:              # for 2 entries
+        i = L[0]            # fixes starting point as first input               
+        if i < L[1]:        # checks if i is less than second input
+            n.append(i)     # adds integer to the list
+            i += 1          # moves up to next integer
+        return n
+            
+    if l >= 3:              # for 3 entries
+        i = L[0]            # fixes starting point as first input 
+        if i < L[1]:        # checks if i is less than second input
+            n.append(i)     # adds integer to the list
+            i = i + L[2]    # moves up to next integer by step of third arguement
+        return n
+  
 
 
 def make_dict(key, **kwargs):
     '''
     Returns a dictionary of all kwargs, with the exception of key.
     '''
-    
-    return None
+    d = {}
+    for k in kwargs.keys():
+        if k != key:
+            d[k] = kwargs[k]
+    return d
 
 
 if __name__ == '__main__':
