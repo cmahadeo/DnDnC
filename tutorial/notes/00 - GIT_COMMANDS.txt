@@ -1,0 +1,59 @@
+GIT INITIAL COMMANDS
+
+Initialize git folder:
+> git init
+
+Add git remote address:
+> git remote add <address> <github repository URL>
+(e.g.git remote add cndnc https://github.com/cmahadeo/DnDnC.git)
+
+Showing all remote addresses:
+> git remote
+
+
+GIT PUSHING COMMANDS: 
+
+Working area > Staging area > Local repository > Global repository
+i.e. Stage > Commit > Push
+
+Stage a file:
+> git add <file name>
+
+Stage all changed files:
+> git add .
+
+Commit file:
+> git commit -m 'Insert comment here'
+
+Push file (branch is typically master):
+> git push <remote> <branch>
+(e.g. git push cndnc master)
+
+Check status of added files:
+> git status
+
+
+GIT SYNCING COMMANDS:
+
+Syncing occurs in two steps: Fetch, then merge
+
+Pull (fetch + merge) repository:
+> git pull <remote> <branch>
+
+Advanced pull repository (do this if regular pull does not work):
+> git pull --rebase <remote> <branch>
+
+Fetch repository:
+> git fetch <remote> <branch>
+
+Merge repository:
+> git merge
+
+
+TIPS:
+- Open git bash in folder you wish to sync with your github repository
+- Shift + Insert is the Paste command in the git bash window
+- The difference between git pull and git fetch is:
+ - git pull tries to do all the work automatically for you. It is an auto combo of git fetch and git mergem, and is 'unsafe'
+ - git fetch takes all changes not synced from your global repository to your local repository. It does not merge them with your current branch.
+ - For our purposes, using git pull is fine 99% of the time.

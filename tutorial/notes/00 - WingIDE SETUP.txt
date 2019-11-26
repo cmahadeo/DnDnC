@@ -1,0 +1,25 @@
+Python Wing IDE set-up
+
+Go to Menu > Edit > Preferences
+
+- User Interface:
+ - Set Color Palette to One Dark for night mode
+ - Check 'Use Color Palette Throughout the UI'
+
+- User Interface > Keyboard
+ - Custom Key Bindings: Ctrl-R evaluate-file-in-shell
+
+- User Interface > Fonts, for checking font size
+
+- Editor:
+ - Check 'Show Line Numbers'
+
+- String hightlight colour fix:
+ Preferences > Editor > Syntax Coloring > stringeol > Background (to Blumine)
+
+
+SETUP python.exe
+
+1. Find the folder where python is installed. Otherwise, install a new python3 installation in some folder.
+2. Go to environment variables and create the path.
+3. You can now open python as a .exe.

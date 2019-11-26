@@ -20,5 +20,5 @@ TRY STATEMENT
 WHILE LOOP
 - A 'while' loop is a control flow statement that allows code to be executed repeatedly with a terminal condition.
 
-FOR LOOP
+FOR LOOP 
 - A special type of while loop, iterating over a list.

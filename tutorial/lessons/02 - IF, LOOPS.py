@@ -56,3 +56,28 @@ if __name__ == '__main__':
         print("Kanna is defined yay!")
         
         
+    # LOOPS
+    
+    done = False
+    num = 0
+    while not done:
+        
+        if num < 10:
+            print("This is not the end!")
+            num += 1
+        
+        else:
+            done = True
+    
+    # FOR LOOP (needs a list!)
+    L = [1,2,3,4]
+    for x in L:
+        print(x)
+            
+    # STARTING HERE:
+    k = 1
+    while k <= 4:
+        print(k)
+        k += 1    
+        
+        

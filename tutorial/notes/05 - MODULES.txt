@@ -1,0 +1,48 @@
+- WING IDE PERSONAL FIX:
+ Preferences > Editor > Syntax Coloring > stringeol > Background (to Blumine)
+
+PYTHON MODULES
+
+IMPORTING
+
+- import os, random, math as ...
+- from math import pi
+- from math import * (everything, not recommended)
+- from math import pi as PI
+
+USING THE MODULES (W.R.T EACH IMPORT TYPE)
+
+OS
+ - os.getcwd() : String path of the running file's folder
+ - os.path.join(str1, str2)
+ - os.path.exists(path)
+ - os.mkdir(path) : Create the directory
+ - os.listdir(path) : Lists everything in a directory as strings
+
+MATH
+ - math.sqrt(num)
+ - math.pi, math.exp, etc.
+
+RANDOM : Pseudo-random module
+ - random.randint(a,b) : Return a random integer such that a <= x <= b
+ - random.choice(seq) : Return a random element from non-empty sequence seq
+ - random.sample(list, k) : Returns a k length list of unique elements chosen from the population sequence
+
+- With replacement, L = [random.randint(1,6) for k in range(4)]
+https://docs.python.org/2/library/random.html
+https://realpython.com/absolute-vs-relative-python-imports/
+
+CREATING OWN MODULE (and PACKAGE with __init__.py)
+
+COMPATIBILITY:
+from __future__ import absolute_import, division, print_function
+
+Generally, use absolute imports
+
+__init__.py: Allows for all imports. Must have __all__ = ['module1', 'module2',...]
+
+Two ways of importing from a directory:
+
+1. from mypack import module1 (as m1), from mypack import module2 (as m2)
+2. from mypack import * (uses __init__.py)
+
