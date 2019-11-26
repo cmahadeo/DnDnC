@@ -2,7 +2,7 @@
 
 Dungeon and Dragons and Coding. The goal of this project is to create an interactive Dungeons and Dragons program that helps the dungeon master keep track of the ongoing game.
 
-![Image of Yugioh](https://github.com/cmahadeo/DnDnC/tree/master/reference/yugioh.png)
+![Image of Yugioh](https://github.com/cmahadeo/DnDnC/tree/master/reference/yugioh.bmp)
 
 # DIRECTORIES
 
