@@ -1,0 +1,23 @@
+SYNTAX RULES
+
+- Variable, function names: 
+  - All lowercase, underscores allowed
+  - e.g. test_variable, dnd_swordsman2
+
+
+- Class names: Capitalize each starting letter of each word, no underscores
+  - e.g. DnDMonster, DragonMaid
+
+- Library, module names:
+  - All lowercase, no underscores allowed
+  - e.g. mylib, gamepackage, dndmonster
+
+KEY WORDS
+
+- Define key commands for user input
+ - e.g. save, load, check, status
+ - Use git bash commands for inspiration
+
+- Make well-defined exceptions to some syntax rules. Consistency is key!
+ - e.g. self.STR, self.AGI, self.INT
+ - We can capitalize abbreviations for instance.

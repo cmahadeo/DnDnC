@@ -6,10 +6,13 @@ if __name__ == '__main__':
     f = open('sample.txt', "r")
     f_str = f.read()
     
-    # WRITE A FILE
-    g = open('sample2.txt', "w")
+    # WRITE A FILE 
+    g = open('sample2.txt', "w") # This creates the file 'sample2.txt'
+    
     g.write("Hello!\n")
     g.write("BYE!")
+    
+    # NOTE: Default window counts 80 characters.
     
     g.close()
     
@@ -33,6 +36,6 @@ if __name__ == '__main__':
     for i in range(len(L)):
         print('{0:4} : {1:3d}'.format(L[i], i**6))
         
-    # Here, 4 is the string length block, for which the string starts after
+    # Here, 4 is the string length block, for which the next string starts after
     # 3d is the decimal block, where each number is right-aligned
     
