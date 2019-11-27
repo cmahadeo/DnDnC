@@ -10,6 +10,32 @@ class Character:
         self.HP = 0
         self.STR = 0
     
+        self.inventory = []
+        
+    
+    def load(self, filename):
+        '''
+        Loads all character information from filename. filename includes the whole directory path.
+        '''
+    
+        pass
+    
+    
+    def save(self, filename):
+        '''
+        Saves all character information onto filename. filename includes the whole directory path.
+        '''
+        
+        pass
+    
+    
+    def show(self, attr):
+        '''
+        Returns the attribute of character. If attr == 'all', returns all attributes.
+        '''
+        
+        pass
+    
     
 class Hero(Character):
     '''

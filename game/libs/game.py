@@ -7,10 +7,18 @@ class Game:
     '''
     
     def __init__(self):
-        self.mode = 'explore'
         self.directory = ''
+        self.mode = 'explore'
         
-    
+        # ELEMENTS
+        self.heroes = {}
+        self.npcs = {}
+        self.enemies = {}
+        
+        self.location = 'None'
+        
+        
+    # COMMANDS
     def load(self, directory):
         '''
         Loads all game elements from the folder directory.
@@ -26,9 +34,32 @@ class Game:
         
         pass
     
-
+    
+    def show(self, *args):
+        '''
+        Prints a desired attribute.
+        '''
+        
+        s = ''
+        if len(args) == 0:
+            s = 'Invalid input!'
+        
+        # Check the heroes, enemies, npc list
+        
+        return s
+    
+    
+    def script(self, *args):
+        '''
+        Prints a desired script.
+        '''
+        
+        pass
+    
+    
 if __name__ == '__main__':
     
     # DEBUG REGION
     game = Game()
+
     
